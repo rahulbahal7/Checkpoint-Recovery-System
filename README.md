@@ -1,12 +1,13 @@
-# mini-DMTCP
+# Checkpoint-Recovery
 
-mini-DMTCP is a Single thread Checkpoint and Recovery System. This means that
-using mini-DMTCP a program can be resumed/restored back from the state when it
+This is a Single thread Checkpoint and Recovery System(inspired from the idea
+    of DMTCP). This means that
+using this system, a program can be resumed/restored back from the state when it
 was terminated. 
 
 The code is written using low-level C.
 
-LOCIC/ALGORITHM behind mini-DMTCP:
+LOCIC/ALGORITHM:
 
 Checkpoint:
    1. Read the memory maps for the process being run.
@@ -41,3 +42,5 @@ DEMO:
      restore it back into the memory and restart it back from the point where it
      was killed.
 
+### Reference
+1. https://github.com/dmtcp/dmtcp
