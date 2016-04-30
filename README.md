@@ -6,7 +6,7 @@ was terminated.
 
 The code is written using low-level C.
 
-## LOCIC/ALGORITHM
+## LOGIC/ALGORITHM
 
 ### Checkpoint:
    1. Read the memory maps for the process being run.
