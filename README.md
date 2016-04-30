@@ -1,22 +1,21 @@
 # Checkpoint-Recovery
 
 This is a Single thread Checkpoint and Recovery System(inspired from the idea
-    of DMTCP). This means that
-using this system, a program can be resumed/restored back from the state when it
+of DMTCP). This means that using this system, a program can be resumed/restored back from the state when it
 was terminated. 
 
 The code is written using low-level C.
 
-LOCIC/ALGORITHM:
+## LOCIC/ALGORITHM
 
-Checkpoint:
+### Checkpoint:
    1. Read the memory maps for the process being run.
    2. Capture all the memory locations and data in those pages in a checkpoint
       file.
    3. Capture the context of the CPU registers, Stack Pointer and Program Counter
       in another file.
 
-Restart:
+### Restart:
    NOTE: Its a good practice(although I did'nt follow it as it's not necessary)
    to map the stack from the original program back in the memory and move the
    stack pointer there before proceeding. This also requires copying the name of
@@ -34,7 +33,7 @@ Restart:
       between these two states and prevent the overwriting of the checkpoint
       image files.
 
-DEMO:
+### DEMO
      For demo run the command:
      `make check`  
      
