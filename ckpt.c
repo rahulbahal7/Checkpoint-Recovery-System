@@ -14,7 +14,7 @@ struct section{
 	bool isContext;
 }h1;
 
-// Context variable for the registers
+// Context variable for the register(s)
 ucontext_t s;
 char low[20], high[20];
 unsigned long long low_value, high_value;
